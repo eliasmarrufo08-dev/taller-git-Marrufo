@@ -1,0 +1,23 @@
+{
+var [5] [4] int puestos
+Read (puestos)
+var int F
+Read (F)
+Var int C
+Read (C)
+#una ves declarada el arreglo y las variables que introduce el usuario F (filas) C (columnas) podemos hacer las verificaciones
+
+if 0<=F and F<5{
+	Puestos [] [] = Puestos [F] []
+#ya verificamos que el valor que introdujo si esta dentro del rango de filas de a matris así que asignamos F a puestos para dejarlo guardado
+}
+
+   #una vez verificado que las fila solicitada existe podemos hacer lo mismo con las columnas
+   Elif 0<=C and C<4
+	Puestos [F] [] = Puestos [F] [C]
+	print (Puestos [F] [C])
+	#aqui imprimimos simplemente el valor que hay en la casilla, el cual seria 1 o 0
+
+Else{ Print(-1)
+#en caso de que la fila y columna introducida no sea valido saltamos directamente aquí
+}
